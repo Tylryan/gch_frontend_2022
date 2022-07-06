@@ -4,12 +4,6 @@
     padding: 0px;
     margin: 0px;
 }
-/*TODO (Navbar)
-/* Navbar to hamburger when small screen. 
-/* Only show Home, Cart, Account
-/* TODO (Fix display for small screens)
-/* Currently you have to scroll right.
- */
 
 body 
 {
@@ -20,10 +14,7 @@ body
         #f6b092 100%);
 }
 
-a 
-{
-    text-decoration: none;
-}
+a { text-decoration: none; }
 
 .topnav
 {
@@ -34,8 +25,9 @@ a
     padding-top: 0.5%;
     padding-bottom: 1%;
     box-shadow: 0px 5px 8px #999999;
-    /* border-radius: 15px; */
+    font-weight: bolder;
 }
+
 .topnav a , .bottom-nav a
 {
     font-size: 1.5em;
@@ -79,32 +71,25 @@ section h1
 
 .card 
 {
-    min-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2%;
 }
 
-.card * 
-{
-    margin-bottom: 0.5em;
-}
+.card * { margin-bottom: 0.5em; }
+
 .card img:hover, .card button:hover, .book-title:hover, .card-title:hover
 {
     cursor: pointer;
 }
 img 
 {
-    /* This will need to be changed to something more responsive*/
     height: 70vh;
     width: 600px;
 }
 
-.book-title
-{
-    text-align: center;
-}
+.book-title { text-align: center; }
 
 .card-title 
 {
@@ -140,15 +125,13 @@ button
     background-color: #fce38d;
 }
 
-li { font-weight:bolder; }
-
 @media only screen and (max-width: 600px) 
 {
-    /* .topnav a:nth-child(2) {display: none; } */
     .topnav a:nth-child(3) {display: none; }
     .topnav a:nth-child(4) {display: none; }
     .topnav 
     {
+        border-radius: 15px;
         position: sticky; 
         top: 0;
         background: white;
@@ -162,18 +145,10 @@ li { font-weight:bolder; }
         font-style: normal;
         padding: 5px;
     }
-    .topnav input:checked ~ .topnav a { display:block;}
-    .card 
-    { 
-        width: 100%; 
-        padding-left: 15%;
-    }
 
-    img {width: 400px;}
-    .book-title{ width: 400px;}
-    .card-title { width: 400px;}
-    .about-author 
-    {
-        margin-left: 15%;
-    }
+    .card { width: 100%; }
+
+    img {width: 80%;}
+    .book-title{ width: 80%;}
+    .card-title { width: 80%;}
 }

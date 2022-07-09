@@ -1,0 +1,152 @@
+*
+{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body 
+{
+    background: linear-gradient(
+        white 0%,
+        white 30%,
+        #f6b092 30%,
+        #f6b092 100%);
+}
+
+a { text-decoration: none; }
+
+.topnav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    box-shadow: 0px 5px 8px #999999;
+    font-weight: bolder;
+}
+
+.topnav a , .bottom-nav a
+{
+    font-size: 1.5em;
+    color: black;
+}
+
+.bottom-nav 
+{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.bottom-nav a 
+{
+    display: block;
+    box-sizing: border-box;
+}
+
+.topnav label, #hamburger { display: none;}
+
+form 
+{
+    border: solid #999999 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    min-height: 70vh;
+    margin: 5vh 5vw;
+    background-color: white;
+    box-shadow: 0px 2px 2px #999999,-2px 2px 2px #999999,2px 2px 2px #999999;
+}
+
+.form-item
+{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-bottom: 1em;
+    width: 50%;
+    min-height: 5em;
+}
+.form-item label 
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.form-item input 
+{
+     height: 2em; 
+     font-size: 1.5em;
+
+}
+.form-item textarea 
+{
+     height: 2em; 
+     font-size: 1.5em;
+}
+
+form h1 
+{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+button
+{
+    border-radius: 15px;
+    border: none;
+    width: 10em;
+    height: 2em;
+    background-color: #fce38d;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .topnav a:nth-child(3) {display: none; }
+    .topnav a:nth-child(4) {display: none; }
+    .topnav 
+    {
+        border-radius: 15px;
+        position: sticky; 
+        top: 0;
+        background: white;
+    }
+
+    .topnav label 
+    {
+        display: inline-block;
+        color: white;
+        background: #f6b092;
+        font-style: normal;
+        padding: 5px;
+    }
+
+    form 
+    {
+        min-height: 80vh;
+    }
+
+    .form-item 
+    {
+        width: 80%;
+        align-items: center;
+    }
+
+    .form-item textarea 
+    {
+        width: 12.5em;
+    }
+}

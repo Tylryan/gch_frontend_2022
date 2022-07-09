@@ -1,0 +1,10 @@
+ <h2>Books</h2>
+ <div *ngIf="selectedBook">
+    <br/>
+    <h5> {{selectedBook.title}}</h5>
+        <p>{{selectedBook.description}}</p>
+ </div>
+ <div *ngFor="let book of books">
+<p (click)="onSelect(book)" style="cursor: pointer;">
+    {{book.title}}</p>
+</div>

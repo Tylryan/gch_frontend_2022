@@ -1,33 +1,47 @@
-<p>customer works!</p>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="topnav">
+    <a href="#">Home</a>
+    <a href="#">Books</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#" class="cart"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+    <a href="#" class="user-account"><i class="fa fa-user" style="font-size:24px"></i></a>
+</nav>
 
-<div class="container">
-    <form (ngSubmit)="onSubmit()">
-        <h4>Customers Form</h4>
-        <input type="hidden" id="id" name="id" [(ngModel)]="model.id">
-        <div >
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="from-control" id="firstName" required name="name" [(ngModel)]="model.firstName">
-        </div>
+<form (ngSubmit)="onSubmit()">
+    <h1>About You</h1>
+    <input type="hidden" id="id" name="id" [(ngModel)]="model.id">
+    <div class="form-item">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="from-control" id="firstName" required name="name" [(ngModel)]="model.firstName">
+    </div>
 
-        <div >
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text"  class="from-control" id="lastName" required name="description" [(ngModel)]="model.lastName">
-        </div>
+    <div class="form-item">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text"  class="from-control" id="lastName" required name="description" [(ngModel)]="model.lastName">
+    </div>
 
-        <div >
-            <label for="email" class="form-label">Email</label>
-            <input type="text" class="from-control" id="email" required name="email" [(ngModel)]="model.email">
-        </div>
-        <div >
-            <label for="address" class="form-label">Address</label>
-            <input type="area" class="from-control" id="address" required name="author" [(ngModel)]="model.address">
-        </div>
-        <div >
-            <label for="creditCard" class="form-label">Credit Card</label>
-            <input type="text" class="from-control" id="address" required name="author" [(ngModel)]="model.address">
-        </div>
-        <!--<button class="btn btn-primary" type="submit">Continue</button>
-        -->
-        <a routerLink="/order" type="submit"> Continue</a>
-    </form>
-</div>
+    <div class="form-item">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" class="from-control" id="email" required name="email" [(ngModel)]="model.email">
+    </div>
+    <div class="form-item">
+        <label for="address" class="form-label">Address</label>
+        <input type="area" class="from-control" id="address" required name="author" [(ngModel)]="model.address">
+    </div>
+    <div class="form-item">
+        <label for="creditCard" class="form-label">Credit Card</label>
+        <input type="text" class="from-control" id="address" required name="author" [(ngModel)]="model.address">
+    </div>
+    <!--<button class="btn btn-primary" type="submit">Continue</button>
+    -->
+    <button><a routerLink="/order" type="submit"> Continue</a></button>
+</form>
+<nav class="bottom-nav">
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+</nav>
+</body>

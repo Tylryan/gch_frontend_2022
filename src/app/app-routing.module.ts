@@ -5,6 +5,8 @@ import { HomeComponent } from './components/home/home.component';
 import { BookComponent } from './components/book/book.component';
 import { BookFormComponent } from './book-form/book-form.component';
 import { BooksListComponent } from './books-list/books-list.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CustomerComponent } from './components/customer/customer.component';
 const routes: Routes = [
   {
     path: '',
@@ -13,6 +15,8 @@ const routes: Routes = [
   {path: 'books',component:BookFormComponent},
   {path: 'book-list',component:BooksListComponent},
   {path: 'books/:id',component:BookFormComponent},
+  {path: 'cart',component:CartComponent},
+  {path: 'customer',component:CustomerComponent},
   {
     path: 'admin',
     component:AdminComponent

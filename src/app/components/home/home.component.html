@@ -1,16 +1,16 @@
 <nav class="topnav">
-    <a href="#">Home</a>
-    <a routerLink="/book-list">Books</a>
-    <a href="#">About Us</a>
-    <a href="#">Contact Us</a>
-    <a routerLink="/cart" class="cart"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-    <a routerLink="/customer" class="user-account"><i class="fa fa-user" style="font-size:24px"></i></a>
+    <a routerLink="/home">Home</a>
+    <a [routerLink]="['/books']">Books</a>
+    <a [routerLink]="['/aboutus']">About Us</a>
+    <a [routerLink]="['/contactus']">Contact Us</a>
+    <a [routerLink]="['/order']"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+    <a [routerLink]="['/books']"><i class="fa fa-user" style="font-size:24px"></i></a>
 </nav>
 <section>
     <h1>Our Latest Adventures</h1>
 </section>
 <section class="cards">
-    <div class="card" id="card1">
+    <div class="carda" id="card1">
         <h3 class="card-title">- Latest Release -</h3>
         <img src="assets/images/hypo.webp">
         <div class="card-bottom">
@@ -19,7 +19,7 @@
             <button type="submit">View Details</button>
         </div>
     </div>
-    <div class="card" id="card2">
+    <div class="carda" id="card2">
         <h3 class="card-title">- Latest Release -</h3>
         <img src="assets/images/mermaid.jpg">
         <div class="card-bottom">

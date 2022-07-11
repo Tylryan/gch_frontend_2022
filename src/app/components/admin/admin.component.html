@@ -22,9 +22,30 @@
         <section>
             <h1>Admin Page Works</h1>
         </section>
-            <nav class="bottom-nav">
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-            </nav>
+        <div class="container">
+            <table class="table table-borderd table-invers">
+                <tr>
+                    <th>Home</th>
+                    <th>Books</th>
+                    <th>Cart</th>
+                </tr>
+                <tr *ngfor="let book of books">
+                    <td>
+                        {{book.title}}
+                    </td>
+                    <td>
+                        {{book.description}}
+                    </td>
+                    <td>
+                        {{book.price}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <nav class="bottom-nav">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
     </body>
 </html>
+

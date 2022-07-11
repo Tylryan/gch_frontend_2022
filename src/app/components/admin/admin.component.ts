@@ -14,7 +14,11 @@ export class AdminComponent implements OnInit {
   }
   
   getBooks(){
-  
+    this.bookService.getBooks().subscribe(
+     // data=>{this.books=data},
+      //err=>console.error(err),
+      () =>console.log('books loaded')
+    );
   }
 
 }

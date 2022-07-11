@@ -8,8 +8,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./book.component.css']
 })
 export class BookComponent implements OnInit {
-
-  
   constructor(private bookService:BookService,private router:Router) { }
   books : any=[]
 
@@ -39,4 +37,3 @@ export class BookComponent implements OnInit {
     );
   } */
 }
-

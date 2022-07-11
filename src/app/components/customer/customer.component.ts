@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-customer',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router) { }
+    model = {id:null,firstName:null, lastName:null, address:null, email:null,CreditCard:null};
   ngOnInit(): void {
+  }
+
+  onSubmit(): void{
+   // if(this.model.id){
+      //Save new customer
+   // } else {
+      //Update existing book
+   // }
+     this.router.navigate(['/order']);
+
   }
 
 }

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Book } from '../model/book';
 import { Observable } from 'rxjs';
 
 const httpOptions ={
@@ -9,10 +10,12 @@ const httpOptions ={
   providedIn: 'root'
 })
 export class BookService {
+  private baseUrl = "http://localhost:8080/api/v1/";
 
   constructor(private http:HttpClient) { }
 
-  getBooks() {
-    return this.http.get('server/book');
-  }
+  
+
+   getAllBooks(page:number): Observable<Book[]> {
+    return this.http.get<Book[]>(this.baseUrl+`book?page=${page}&size=10`);  }
 }

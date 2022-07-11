@@ -1,0 +1,135 @@
+a { 
+    text-decoration: none; 
+    color: black;
+}
+
+.topnav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    box-shadow: 0px 5px 8px #999999;
+    font-weight: bolder;
+}
+
+.topnav a , .bottom-nav a
+{
+    font-size: 1.5em;
+    color: black;
+}
+
+.bottom-nav 
+{
+    margin-top: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+
+    background-color:white;
+
+}
+
+.bottom-nav a 
+{
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.topnav label, #hamburger { display: none;}
+/* nav ul li { min-width: 80px; } */
+
+section h1 
+{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.book-details 
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    max-width: 80%;
+    align-items: center;
+    margin:auto;
+    padding-top: 2%;
+    background-color: white;
+    height: 30vh;
+    font-size: 2em;
+}
+
+.book-details p 
+{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+.about-author 
+{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    text-align: center;
+    background-color: #cccccc;
+    padding: 2% 8%;
+}
+
+.about-author p { padding: 0 15%; }
+
+button
+{
+    border-radius: 15px;
+    border: none;
+    width: 13em;
+    height: 2.2em;
+    background-color: #fce38d;
+    margin-top: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .topnav a:nth-child(3) {display: none; }
+    .topnav a:nth-child(4) {display: none; }
+    .topnav 
+    {
+        border-radius: 15px;
+        position: sticky; 
+        top: 0;
+        background: white;
+    }
+
+    .topnav label 
+    {
+        display: inline-block;
+        color: white;
+        background: #f6b092;
+        font-style: normal;
+        padding: 5px;
+    }
+    .carda { width: 100%; }
+
+    img {width: 80%;}
+    .book-title{ width: 80%;}
+    .card-title { width: 80%;}
+    .card-bottom {width: 80%;}
+    .book-details 
+    {
+        height: 40vh;
+    }
+    button 
+    {
+        width: 10em;
+    }
+
+}

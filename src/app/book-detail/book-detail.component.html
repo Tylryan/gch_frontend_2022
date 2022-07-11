@@ -1,14 +1,24 @@
-<h3>Book Detail</h3>
-<div>
-    <div>
-        <label>Book Title :</label> {{book.name}}
+<nav class="topnav">
+    <a routerLink="/home">Home</a>
+    <a [routerLink]="['/books']">Books</a>
+    <a [routerLink]="['/aboutus']">About Us</a>
+    <a [routerLink]="['/contactus']">Contact Us</a>
+    <a [routerLink]="['/order']"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+    <a [routerLink]="['/books']"><i class="fa fa-user" style="font-size:24px"></i></a>
+</nav>
+<section>
+    <h1>PlaceHolder Book Name {{book.name}}</h1>
+    <div class="book-details">
+        <p class="book-desc">Book Title: {{book.name}}</p>
+        <p class="book-desc">Price: {{book.price}}</p>
+        <p class="book-desc">Description: {{book.price}}</p>
+        <button class="book-desc"><a [routerLink]="['/customer']"> Continue </a></button>
     </div>
-    <div>
-        <label>Price :</label> {{book.price}}
-    </div>
-    <div>
-        <label>Description:</label> {{book.price}}
-    </div>
-    <a [routerLink]="['/customer']"> Continue </a>
-
-</div>
+<section class="about-author">
+    <h1>About The Author</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odit corrupti possimus voluptate asperiores similique a hic, placeat, reiciendis nesciunt, magni maxime illum deleniti ipsum neque quaerat? Possimus eligendi eveniet in esse saepe! Doloremque voluptas nesciunt, eum molestias ab, est quas facilis neque rem voluptatem, assumenda optio explicabo ea praesentium.</p>
+</section>
+    <nav class="bottom-nav">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>

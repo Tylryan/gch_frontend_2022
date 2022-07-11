@@ -14,9 +14,15 @@ import { PublisherService } from './services/publisher.service';
 import { CartComponent } from './components/cart/cart.component';
 
 import { FormsModule } from '@angular/forms';
+
+import { BookDetailComponent } from './book-detail/book-detail.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 const routes: Routes = [
   {path: '',component:BookComponent},
   {path: 'books',component:BookComponent},
+ 
+  {path:'book-detail',component:BookDetailComponent},
+  {path:'book-detail/id',component:BookDetailComponent},
   {path: 'books/:id',component:CustomerComponent},
   {path: 'admin',component:AdminComponent}
 ];

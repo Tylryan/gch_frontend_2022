@@ -1,4 +1,16 @@
-
- <br/>
-<p style="color: green; padding-left: 50px;"> <b>Your order has been successfuly Submitted </b> </p>
-<p style="color: green; padding-left: 50px;"> <b>Thank you for Shopping !</b> </p>
+<nav class="topnav">
+    <a routerLink="/home">Home</a>
+    <a [routerLink]="['/books']">Books</a>
+    <a [routerLink]="['/aboutus']">About Us</a>
+    <a [routerLink]="['/contactus']">Contact Us</a>
+    <a [routerLink]="['/order']"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+    <a [routerLink]="['/books']"><i class="fa fa-user" style="font-size:24px"></i></a>
+</nav>
+<section>
+    <h1 class="thanks">Thank You For Your Purchase!</h1>
+    <img alt="thanks" src="assets/images/thanks.png">
+</section>
+<nav class="bottom-nav">
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+</nav>
